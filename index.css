@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.hero{
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, .5),
+        rgba(0, 0, 0, .5)
+    )
+    
+    ,url(/img/hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.dogapi{
+    position: absolute; /* Establece la posición absoluta del h1 dentro del contenedor */
+    z-index: 1; /* Asegura que el h1 esté por encima de la imagen */
+    left: 50%; /* Coloca el punto de anclaje a la mitad del ancho del contenedor */
+    top: 50%; /* Coloca el punto de anclaje a la mitad de la altura del contenedor */
+    transform: translate(-50%, -50%); /* Centra el elemento en el centro del contenedor */
+}
+
+.parrafo{
+    font-size: 1.8rem;
+}
+
+.parrafo__random{
+    font-size: 2rem;
+}
+
+.heading{
+    font-size: 7rem;
+}
+
+.section__default{
+    min-height: 100vh;
+}
+
+:root{
+    --bg-color: #423e66;
+    --bg-2-color: #33245d;
+}
+
+.random-dog{
+    background: linear-gradient(to bottom, #080514, #422b65);
+}
+#nav__pc{
+    padding: 20px;
+}
+
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.random-dog{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.generate{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: none;
+    font-weight: 600;
+    color: gold;
+    border: 2px solid gold;
+    transition: 1s;
+}
+
+
+
+.generate:hover{
+    background: rgb(8, 24, 27);
+}
+
+.random__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.random__heading{
+    font-size: 6.5rem;
+    color: white;
+}
+
+.navbar-toggler{
+    background: white;
+}
+
+.diferent-bg{
+    background: linear-gradient(to top, #ce8231, #422b65);
+}
+
+.images-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenes__random{
+    border: 2px solid gold;
+    overflow: hidden;
+    background: #3c30ba;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 25px;
+    width: 500px;
+    height: 500px;
+}
+
+.imagenes__random img{
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagenesrandom{
+    z-index: 99;
+}
+
+
+@media (max-width: 991px){
+    .nav-link:hover{
+        text-decoration: none;
+    }
+    #nav__pc{
+        background: white;
+        color: black !important;
+    }
+    #nav__pc a{
+        background: white;
+        color: black !important;
+        border-radius: 15px;
+    }
+    #nav__pc a:hover{
+        filter: brightness(80%);
+        transition: 1s;
+    }
+    .navbar-brand{
+        color: black !important;
+    }
+
+    .parrafo{
+        font-size: 1rem;
+    }
+
+    .heading{
+        font-size: 5rem;
+    }
+
+    #nav__pc{
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Color de fondo del encabezado */ /* Color de texto del encabezado */
+    padding: 10px; /* Añade espacio interior al encabezado */
+    z-index: 100; /* Un valor alto de z-index asegura que el encabezado esté en la parte superior de la pila de elementos */
+}
+}
+
+@media(max-width: 768px){
+    
+    .images-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #BreedInfo{
+        display: none;
+    }
+
+    .imagenes__random{
+        border: 2px solid gold;
+        overflow: hidden;
+        background: #3c30ba;
+        border-radius: 30px;
+        text-align: center;
+        margin-top: 25px;
+        width: 400px;
+        object-fit: cover;
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 450px){
+.imagenes__random{
+    border: 2px solid gold;
+    overflow: hidden;
+    background: #3c30ba;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 25px;
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+}
+}
+
+@media (max-width: 350px){
+    html{
+        font-size: 50%;
+    }
+    
+    .imagenes__random{
+        border: 2px solid gold;
+        overflow: hidden;
+        background: #3c30ba;
+        border-radius: 30px;
+        text-align: center;
+        margin-top: 25px;
+        width: 230px;
+        object-fit: cover;
+        height: 230px;
+    }
+    }
+

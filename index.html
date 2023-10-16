@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>The Dog Api</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <section id="hero" class="hero section__default">
+        <div class="contenedor">
+        <nav id="nav__pc" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light display-4" href="#">TheDogApi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#random-dog">Random-Dog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#choose-dog">Choose-The-Dog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+          <div class="hero__text dogapi">
+        <h1 class="heading text-light display-1 text-center">TheDogApi</h1>
+        <p class="parrafo text-light text-center">Welcome to TheDogApi, in this page you would</p>
+            <section class="animation">
+            <div class="first parrafo text-center text-warning"><div>Discover information about beautiful dogs</div></div>
+            <div class="second parrafo text-center text-warning"><div>Random doggy pictures</div></div>
+            <div class="third parrafo text-center text-warning"><div>Learn more about dog breeds</div></div>
+            </section>
+    </div>
+    </div>
+    </section>
+
+    <section class="random-dog section__default" id="random-dog">
+        <div class="contenedor">
+
+            <div class="random__wrapper">
+            <h2 class="random__heading display-1">Random Dog</h2>
+            <p class="parrafo__random display-1 text-light">Generate Random Dog Images!</p>
+
+            <div class="imagenes__random">
+                <img src="img/default.jpg" id="RandomDog" class="imagenesrandom" alt="Random Dog Image">
+            </div>
+            <button class="generate mt-3" id="GenerateRandom">Generate!</button>
+
+            <p class="parrafo__random mt-4 display-1 text-light">They are beautiful!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="random-dog diferent-bg section__default" id="choose-dog">
+        <div class="contenedor">
+            <div class="choose__wrapper">
+            <h2 class="choose__heading text-light display-1">Choose the Dog</h2>
+            <p class="parrafo__choose display-5 text-light">Select a Breed and Get an Image!</p>
+            <select id="dogBreed" class="form-select">
+                <option value="" disabled selected>Click to choose</option>
+                <option value="affenpinscher">Affenpinscher</option>
+                <option value="african">African</option>
+                <option value="airedale">Airedale</option>
+                <option value="akita">Akita</option>
+                <option value="appenzeller">Appenzeller</option>
+                <option value="australian">Australian</option>
+                <option value="basenji">Basenji</option>
+                <option value="beagle">Beagle</option>
+                <option value="bluetick">Bluetick</option>
+                <option value="borzoi">Borzoi</option>
+                <option value="bouvier">Bouvier</option>
+                <option value="boxer">Boxer</option>
+                <option value="brabancon">Brabancon</option>
+                <option value="briard">Briard</option>
+                <option value="buhund">Norwegian Buhund</option>
+                <option value="bulldog">Bulldog</option>
+                <option value="bullterrier">Bull Terrier</option>
+                <option value="cattledog">Australian Cattledog</option>
+                <option value="cavapoo">Cavapoo</option>
+                <option value="chihuahua">Chihuahua</option>
+                <option value="chow">Chow</option>
+                <option value="clumber">Clumber</option>
+                <option value="cockapoo">Cockapoo</option>
+                <option value="collie">Border Collie</option>
+                <option value="coonhound">Coonhound</option>
+                <option value="corgi">Cardigan Corgi</option>
+                <option value="cotondetulear">Coton de Tulear</option>
+                <option value="dachshund">Dachshund</option>
+                <option value="dalmatian">Dalmatian</option>
+                <option value="dane">Great Dane</option>
+                <option value="deerhound">Scottish Deerhound</option>
+                <option value="dhole">Dhole</option>
+                <option value="dingo">Dingo</option>
+                <option value="doberman">Doberman</option>
+                <option value="elkhound">Norwegian Elkhound</option>
+                <option value="entlebucher">Entlebucher</option>
+                <option value="eskimo">Eskimo</option>
+                <option value="finnish">Finnish Lapphund</option>
+                <option value="frise">Bichon Frise</option>
+                <option value="germanshepherd">German Shepherd</option>
+                <option value="greyhound">Italian Greyhound</option>
+                <option value="groenendael">Groenendael</option>
+                <option value="havanese">Havanese</option>
+                <option value="hound">Afghan Hound</option>
+                <option value="husky">Husky</option>
+                <option value="keeshond">Keeshond</option>
+                <option value="kelpie">Kelpie</option>
+                <option value="komondor">Komondor</option>
+                <option value="kuvasz">Kuvasz</option>
+                <option value="labradoodle">Labradoodle</option>
+                <option value="labrador">Labrador</option>
+                <option value="leonberg">Leonberg</option>
+                <option value="lhasa">Lhasa</option>
+                <option value="malamute">Malamute</option>
+                <option value="malinois">Malinois</option>
+                <option value="maltese">Maltese</option>
+                <option value="mastiff">Bull Mastiff</option>
+                <option value="mexicanhairless">Mexican Hairless</option>
+                <option value="mix">Mix</option>
+                <option value="mountain">Bernese Mountain</option>
+                <option value="newfoundland">Newfoundland</option>
+                <option value="otterhound">Otterhound</option>
+                <option value="ovcharka">Caucasian Ovcharka</option>
+                <option value="papillon">Papillon</option>
+                <option value="pekinese">Pekinese</option>
+                <option value="pembroke">Pembroke</option>
+                <option value="pinscher">Miniature Pinscher</option>
+                <option value="pitbull">Pitbull</option>
+                <option value="pointer">German Pointer</option>
+                <option value="pomeranian">Pomeranian</option>
+                <option value="poodle">Poodle</option>
+                <option value="pug">Pug</option>
+                <option value="puggle">Puggle</option>
+                <option value="pyrenees">Pyrenees</option>
+                <option value="redbone">Redbone</option>
+                <option value="retriever">Chesapeake Retriever</option>
+                <option value="ridgeback">Rhodesian Ridgeback</option>
+                <option value="rottweiler">Rottweiler</option>
+                <option value="saluki">Saluki</option>
+                <option value="samoyed">Samoyed</option>
+                <option value="schipperke">Schipperke</option>
+                <option value="schnauzer">Giant Schnauzer</option>
+                <option value="segugio">Italian Segugio</option>
+                <option value="setter">English Setter</option>
+                <option value="sharpei">Shar Pei</option>
+                <option value="sheepdog">English Sheepdog</option>
+                <option value="shiba">Shiba</option>
+                <option value="shihtzu">Shih Tzu</option>
+                <option value="spaniel">Blenheim Spaniel</option>
+                <option value="spitz">Japanese Spitz</option>
+                <option value="springer">English Springer</option>
+                <option value="stbernard">St. Bernard</option>
+                <option value="terrier">American Terrier</option>
+                <option value="tervuren">Tervuren</option>
+                <option value="vizsla">Vizsla</option>
+                <option value="waterdog">Spanish Water Dog</option>
+                <option value="weimaraner">Weimaraner</option>
+                <option value="whippet">Whippet</option>
+                <option value="wolfhound">Irish Wolfhound</option>
+            </select>
+            
+            <button class="generate mt-3" id="GenerateBreed">Choose!</button>
+    
+            <div class="images-wrap">
+
+                <div class="imagenes__random">
+                <img src="img/default2.jpg" alt="Breed Dog Image" id="BreedDogImage">
+                </div>
+                <div id="BreedInfo" class="breed-info">
+                <h3 class="heading dogaptt display-5 text-light mb-5">TheDogApi</h3>
+                    <section class="animation">
+                        <div class="first parrafo text-center text-warning"><div>Dogs are beautiful</div></div>
+                        <div class="second parrafo text-center text-warning"><div>We love dogs!</div></div>
+                        <div class="third parrafo text-center text-warning"><div>We have a lot of dog images</div></div>
+                      </section>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+  </main>
+  <footer class="footer bg-dark p-3">
+    <div class="contenedor footer__wrapper d-flex justify-content-between align-content-center">
+        <div class="footer__text">
+            <p class="text-light">Thanks for watching my page!</p>
+        </div>
+            <a href="#" class="text-warning text-decoration-none">Home</a>
+        <div class="footer__text">
+            <p class="text-light">&copy; 2023, by: <a href="https://www.linkedin.com/in/damian-moyano-2335b528b/" target="_blank" class="text-warning text-decoration-none">Damian Moyano</a></p>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="choose.js"></script>
+  <script defer src="animations.js"></script>
+</body>
+
+</html>
